@@ -222,20 +222,20 @@ const Hero = ({ onGetQuote }: HeroProps) => {
                     <div className="w-full max-w-md">
                         <form
                             onSubmit={handleGetQuote}
-                            className="rounded-2xl bg-white p-6 shadow-2xl"
+                            className="rounded-2xl bg-white/20 backdrop-blur-sm p-6 shadow-2xl border border-white/30"
                         >
                             <div className="text-center mb-6">
-                                <h3 className="text-xl font-bold text-gray-900 mb-1">Get Your Quote</h3>
-                                <p className="text-sm text-gray-500">Fast, reliable Nepali movers 🇳🇵</p>
+                                <h3 className="text-xl font-bold text-white mb-1">Get Your Quote</h3>
+                                <p className="text-sm text-white/70">Fast, reliable Nepali movers 🇳🇵</p>
                             </div>
                             
                             <div className="space-y-4 mb-4">
                                 {/* Moving from */}
                                 <div>
-                                    <label className="mb-1.5 flex items-center gap-1.5 text-sm font-medium text-gray-700">
+                                    <label className="mb-1.5 flex items-center gap-1.5 text-sm font-medium text-white">
                                         📍 Moving from
                                         {locating && (
-                                            <span className="flex items-center gap-1 text-gray-400 text-xs">
+                                            <span className="flex items-center gap-1 text-white/60 text-xs">
                                                 <LocateFixed className="size-3 animate-pulse" />
                                                 Locating…
                                             </span>
@@ -251,7 +251,7 @@ const Hero = ({ onGetQuote }: HeroProps) => {
 
                                 {/* Moving to */}
                                 <div>
-                                    <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                                    <label className="mb-1.5 block text-sm font-medium text-white">
                                         📍 Moving to
                                     </label>
                                     <PlacesInput
@@ -265,7 +265,7 @@ const Hero = ({ onGetQuote }: HeroProps) => {
 
                             {/* Validation error */}
                             {quoteError && (
-                                <p className="mb-3 text-xs text-red-500 text-center">{quoteError}</p>
+                                <p className="mb-3 text-xs text-red-400 text-center">{quoteError}</p>
                             )}
 
                             <button
@@ -275,7 +275,7 @@ const Hero = ({ onGetQuote }: HeroProps) => {
                                 Get Instant Quote →
                             </button>
                             
-                            <p className="text-center text-xs text-gray-400 mt-4">
+                            <p className="text-center text-xs text-white/60 mt-4">
                                 ✓ No obligation &nbsp;•&nbsp; ✓ Response within 30 mins
                             </p>
                         </form>
