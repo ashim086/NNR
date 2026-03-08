@@ -62,7 +62,7 @@ export default function DashboardHome() {
         >
 
             {/* Full-page grid — fixed, spans entire viewport across all sections */}
-            <div className="fixed inset-0 hidden md:grid grid-cols-58 gap-0 pointer-events-none z-0">
+            {/* <div className="fixed inset-0 hidden md:grid grid-cols-58 gap-0 pointer-events-none z-0">
                 {gridCells.map((_, idx) => {
                     const isHighlighted = highlighted.has(idx);
                     return (
@@ -79,7 +79,7 @@ export default function DashboardHome() {
                         />
                     );
                 })}
-            </div>
+            </div> */}
 
 
             {/* Mobile grid */}
