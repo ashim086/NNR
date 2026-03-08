@@ -62,24 +62,24 @@ export default function DashboardHome() {
         >
 
             {/* Full-page grid — fixed, spans entire viewport across all sections */}
-            {/* <div className="fixed inset-0 hidden md:grid grid-cols-58 gap-0 pointer-events-none z-0">
+            <div className="fixed inset-0 hidden md:grid grid-cols-58 gap-0 pointer-events-none z-0">
                 {gridCells.map((_, idx) => {
                     const isHighlighted = highlighted.has(idx);
                     return (
                         <div
                             key={idx}
-                            className="w-[1.6025rem] h-6.25 border"
+                            className="w-[1.6025rem] h-6.25 border rounded-full"
                             style={{
-                                borderColor: isHighlighted ? "rgba(220,38,38,0.45)" : "rgba(0,0,0,0.05)",
-                                backgroundColor: isHighlighted ? "rgba(220,38,38,0.06)" : "transparent",
+                                borderColor: isHighlighted ? "rgba(220,38,38,0.2)" : "rgba(0,0,0,0)",
+                                backgroundColor: isHighlighted ? "rgba(220,38,38,0.1)" : "transparent",
                                 transition: isHighlighted
-                                    ? "border-color 0.1s ease-out, background-color 0.1s ease-out"
-                                    : "border-color 2s ease, background-color 2s ease",
+                                    ? "border-color 0.01s ease-out, background-color 0.01s ease-out"
+                                    : "border-color 3s ease, background-color 3s ease",
                             }}
                         />
                     );
                 })}
-            </div> */}
+            </div>
 
 
             {/* Mobile grid */}
