@@ -140,8 +140,8 @@ export default function FAQ({ onContactClick }: { onContactClick?: () => void })
                             </p>
                         </div>
 
-                        {/* Contact card */}
-                        <div className="rounded-2xl border border-gray-100 bg-gray-50 p-6 flex flex-col items-center text-center gap-3">
+                        {/* Contact card – desktop only */}
+                        <div className="hidden lg:flex rounded-2xl border border-gray-100 bg-gray-50 p-6 flex-col items-center text-center gap-3">
                             <MessageCircle className="h-8 w-8 text-red-500" />
                             <p className="font-semibold text-gray-900">Still have questions?</p>
                             <p className="text-sm text-gray-500">Our friendly team is here to help you 24/7</p>
@@ -203,6 +203,27 @@ export default function FAQ({ onContactClick }: { onContactClick?: () => void })
                                 </AccordionItem>
                             ))}
                         </Accordion>
+
+                        {/* Contact card – mobile only */}
+                        <div className="flex lg:hidden rounded-2xl border border-gray-100 bg-gray-50 p-6 flex-col items-center text-center gap-3 mt-4">
+                            <MessageCircle className="h-8 w-8 text-red-500" />
+                            <p className="font-semibold text-gray-900">Still have questions?</p>
+                            <p className="text-sm text-gray-500">Our friendly team is here to help you 24/7</p>
+                            <div className="flex flex-wrap gap-2 mt-1 justify-center">
+                                <a href="tel:0452649320" className="inline-flex items-center gap-2 rounded-full bg-red-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-red-600 transition">
+                                    <Phone className="h-4 w-4" />
+                                    Call Us
+                                </a>
+                                <button
+                                    type="button"
+                                    onClick={onContactClick}
+                                    className="inline-flex items-center gap-2 rounded-full border-2 border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 hover:border-red-300 hover:text-red-600 transition"
+                                >
+                                    <Mail className="h-4 w-4" />
+                                    Contact Us
+                                </button>
+                            </div>
+                        </div>
                     </motion.div>
                 </div>
             </div>
