@@ -228,6 +228,10 @@ const Hero = ({ onGetQuote, onContactClick }: HeroProps) => {
                             <Landmark className="h-5 w-5 text-red-400" />
                             Australia-Wide
                         </div>
+                        <div className="flex items-center gap-2 text-sm text-white/80">
+                            <LocateFixed className="h-5 w-5 text-red-400" />
+                            HQ Sydney
+                        </div>
                     </motion.div>
                 </div>
 
